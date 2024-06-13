@@ -1,0 +1,110 @@
+/* 
+reset 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+general  
+*/
+
+/* 
+main  
+*/
+
+.container-main {
+    background-color: black;
+    height: calc(100vh - 80px);
+}
+
+/* 
+footer  
+*/
+
+.container-footer {
+    background-color: #222222;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.audio-video {
+    width: 250px;
+    display: flex;
+    color: white;
+    
+}
+
+.audio {
+    width: 60px;
+    padding: 10px;
+    text-align: center;
+}
+
+.audio i,
+.video i {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.audio div, 
+.video div {
+    font-size: 10px;
+}
+
+.freccia {
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.video {
+    width: 80px;
+    padding: 10px;
+    text-align: center;
+}
+
+.impostazioni {
+    display: flex;
+    color: white;
+    min-width: 550px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.impostazioni > *:not(.freccia) {
+    min-width: 40px;
+    padding: 5px;
+
+}
+
+.impostazioni i:not(.fa-solid-fa-angle-uo) {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.impostazioni div:last-child {
+    font-size: 10px;
+}
+
+.share  i {
+    color: #4bc800;
+}
+
+.fine-call {
+    background-color: #4a4a4a;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+}
+
