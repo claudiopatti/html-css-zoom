@@ -14,17 +14,92 @@ general
 */
 
 /* 
+header  
+*/
+
+header {
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+   
+}
+
+header button {
+    background-color: #4a4a4a;
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+/* 
 main  
 */
 
-.container-main {
+main {
+    overflow: auto;
     background-color: black;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 130px);
+}
+
+/* .container-main {
+    background-color: black;
+    height: calc(100vh - 130px);
+    
+} */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* width: 1300px; */
+    /* margin: 0 auto; */
+    position: relative;
+
+}
+
+.immagine img {
+    width: 180px;
+    height: 100px;
+    display: block;
+    margin: 10px 2px 10px;
+    
+}
+
+.immagine {
+    position: relative;
+    
+}
+
+.immagine div {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 5px;
+    font-size: 10px;
+    width: 80px;
+    position: absolute;
+    bottom: 10px;
+    left: 2px;
+   
+}
+
+
+.immagine div i {
+    padding-right: 3px;
 }
 
 /* 
 footer  
 */
+
+footer {
+    overflow: auto;
+}
 
 .container-footer {
     background-color: #222222;
@@ -44,11 +119,13 @@ footer
     width: 60px;
     padding: 10px;
     text-align: center;
+    background-color: #222222;
+    border: none;
+    color: white;
 }
 
 .audio i,
 .video i {
-    font-size: 25px;
     margin-bottom: 10px;
 }
 
@@ -57,11 +134,14 @@ footer
     font-size: 10px;
 }
 
-.freccia {
+#freccia {
     width: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #222222;
+    border: none;
+    color: white;
     
 }
 
@@ -69,29 +149,37 @@ footer
     width: 80px;
     padding: 10px;
     text-align: center;
+    background-color: #222222;
+    border: none;
+    color: white;
 }
 
 .impostazioni {
     display: flex;
-    color: white;
     min-width: 550px;
     padding: 10px;
     text-align: center;
     
 }
 
-.impostazioni > *:not(.freccia) {
+.impostazioni button {
+    background-color: #222222;
+    color: white;
+    border: none;
+    
+}
+
+.impostazioni > * {
     min-width: 40px;
     padding: 5px;
 
 }
 
-.impostazioni i:not(.fa-solid-fa-angle-uo) {
+.impostazioni i {
     margin-bottom: 10px;
-    font-size: 25px;
 }
 
-.impostazioni div:last-child {
+.impostazioni div {
     font-size: 10px;
 }
 
