@@ -47,18 +47,10 @@ main {
     height: calc(100vh - 130px);
 }
 
-/* .container-main {
-    background-color: black;
-    height: calc(100vh - 130px);
-    
-} */
-
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* width: 1300px; */
-    /* margin: 0 auto; */
     position: relative;
 
 }
@@ -134,7 +126,7 @@ footer {
     font-size: 10px;
 }
 
-#freccia {
+.freccia {
     width: 20px;
     display: flex;
     justify-content: center;
